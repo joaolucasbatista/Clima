@@ -1,0 +1,101 @@
+/* Define estilos padrão para todos os elementos da página */
+* {
+   margin: 0; /* Remove a margem padrão dos elementos */
+   padding: 0; /* Remove o preenchimento padrão dos elementos */
+   box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total do elemento */
+   font-family: "Open Sans", sans-serif; /* Define a fonte usada no site */
+}
+
+/* Estilos para o corpo da página */
+body {
+    height: 100vh; /* Define a altura da página como 100% da altura da janela de visualização */
+    width: 100vw; /* Define a largura da página como 100% da largura da janela de visualização */
+    display: flex; /* Usa Flexbox para posicionar os elementos */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    background-image: url("https://images.unsplash.com/photo-1463598208575-2fba20d78efe?q=80&w=2110&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Define uma imagem de fundo para a página */
+    background-size: cover; /* Faz com que a imagem cubra toda a área da página */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilos para o contêiner principal */
+.caixa-maior {
+    background: rgba(0, 0, 0, 0.8); /* Define uma cor de fundo preta com opacidade de 80% */
+    border-radius: 25px; /* Adiciona bordas arredondadas com raio de 25px */
+    padding: 20px; /* Adiciona um espaço interno de 20px ao redor do conteúdo */
+    width: 95%; /* Define a largura como 95% da largura da página */
+    max-width: 450px; /* Define a largura máxima como 450px */
+}
+
+/* Estilos para o campo de entrada de cidade */
+.inputcidade {
+   border: none; /* Remove a borda padrão */
+   outline: none; /* Remove a borda ao redor quando o campo está em foco */
+   padding: 10px; /* Adiciona um espaço interno de 10px */
+   border-radius: 25px; /* Adiciona bordas arredondadas com raio de 25px */
+   font-size: 20px; /* Define o tamanho da fonte como 20px */
+   background-color: #7c7c7c2b; /* Define a cor de fundo como um cinza claro com opacidade */
+   color: #ffffff; /* Define a cor do texto como branca */
+   width: calc(100% - 70px); /* Define a largura como 100% da largura do contêiner menos 70px */
+}
+
+/* Estilos para o botão de busca */
+.botao-busca {
+   border: none; /* Remove a borda padrão */
+   outline: none; /* Remove a borda ao redor quando o botão está em foco */
+   padding: 10px; /* Adiciona um espaço interno de 10px */
+   border-radius: 50px; /* Adiciona bordas arredondadas com raio de 50px */
+   background-color: #7c7c7c2b; /* Define a cor de fundo como um cinza claro com opacidade */
+   cursor: pointer; /* Muda o cursor para uma mão quando passa sobre o botão */
+   float: right; /* Alinha o botão à direita */
+}
+
+/* Estilos para a imagem do botão de busca */
+.img-busca {
+   width: 20px; /* Define a largura da imagem como 20px */
+}
+
+/* Estilos para o contêiner que agrupa o conteúdo principal */
+.caixa-media {
+   margin-top: 30px; /* Adiciona um espaço acima do contêiner de 30px */
+}
+
+/* Estilos para o título da cidade */
+.cidade {
+   color: #ffffff; /* Define a cor do texto como branca */
+   font-size: 28px; /* Define o tamanho da fonte como 28px */
+   font-weight: 300; /* Define o peso da fonte como leve */
+}
+
+/* Estilos para a temperatura */
+.temp {
+   font-size: 20px; /* Define o tamanho da fonte como 20px */
+   color: #ffffff; /* Define a cor do texto como branca */
+   margin-top: 20px; /* Adiciona um espaço acima do texto de 20px */
+}
+
+/* Estilos para o contêiner menor que agrupa a previsão */
+.caixa-menor {
+   display: flex; /* Usa Flexbox para alinhar os itens horizontalmente */
+   align-items: center; /* Alinha os itens verticalmente ao centro */
+   margin-top: 20px; /* Adiciona um espaço acima do contêiner de 20px */
+   color: #ffffff; /* Define a cor do texto como branca */
+}
+
+/* Estilos para a imagem da previsão do tempo */
+.img-previsao {
+   width: 50px; /* Define a largura da imagem como 50px */
+}
+
+/* Estilos para a descrição da previsão do tempo */
+.texto-previsao {
+   color: #ffffff; /* Define a cor do texto como branca */
+   margin-left: 20px; /* Adiciona um espaço à esquerda do texto de 20px */
+   text-transform: capitalize; /* Capitaliza a primeira letra de cada palavra */
+}
+
+/* Estilos para a umidade */
+.umidade {
+   color: #ffffff; /* Define a cor do texto como branca */
+   margin-top: 20px; /* Adiciona um espaço acima do texto de 20px */
+}

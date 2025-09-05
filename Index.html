@@ -1,64 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!-- Define o idioma da página como português do Brasil -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css">
-    <!-- Vincula o arquivo CSS externo (Styles.css) para aplicar estilos à página -->
+    <link rel="stylesheet" href="style.css">
     <title>Previsão do tempo</title>
-    
-    <!-- Define o título da página que aparece na aba do navegador -->
-    <script src="Scripts.js"></script>
-
-    <!-- Vincula o arquivo JavaScript externo (Scripts.js) para adicionar funcionalidades interativas à página -->
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <!-- Estabelece uma conexão antecipada com o Google Fonts para melhorar o carregamento das fontes -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Estabelece uma conexão antecipada com o Google Fonts (servidor de fontes) com suporte a CORS -->
-    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <!-- Vincula a fonte 'Open Sans' do Google Fonts para ser usada na página -->
 </head>
 
 <body>
     <div class="caixa-maior">
-        <!-- Contêiner principal para centralizar e estilizar o conteúdo da página -->
-
         <input class="inputcidade" placeholder="Digite o nome da cidade">
-        <!-- Campo de entrada para o usuário digitar o nome da cidade -->
-
         <button class="botao-busca" onclick="cliqueinobotao()">
-            <!-- Botão que chama a função cliqueinobotao() quando clicado -->
-            
             <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="Busca">
-            <!-- Imagem dentro do botão que representa um ícone de busca -->
         </button>
 
         <div class="caixa-media">
-            <!-- Contêiner para agrupar a exibição de informações da previsão do tempo -->
-
             <h2 class="cidade">Tempo em São Paulo</h2>
-            <!-- Título que mostra a cidade para a qual a previsão do tempo foi consultada -->
-
             <p class="temp">21°C</p>
-            <!-- Parágrafo que mostra a temperatura atual -->
 
             <div class="caixa-menor">
-                <!-- Contêiner para agrupar a imagem e a descrição da previsão do tempo -->
-
                 <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="Icone-info-tempo">
-                <!-- Imagem do ícone que representa o estado do tempo -->
-                
                 <p class="texto-previsao">Nublado</p>
-                <!-- Parágrafo que mostra a descrição do estado do tempo -->
             </div>
 
             <p class="umidade">Umidade 76%</p>
-            <!-- Parágrafo que mostra a umidade atual -->
         </div>
     </div>
 </body>
